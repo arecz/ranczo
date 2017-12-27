@@ -1,19 +1,21 @@
 .container {
     display: flex;
     height: 100vh;
-    flex: 1;
+    flex-grow: 1;
     
-    background-color: bisque;
+    background-image: url("../assets/img/tapestry_pattern.png");
 
 }
 
 .right-bar, .left-bar {
-    color: purple;
+    color: #212121;
+    flex-grow: 0;
     flex-basis: 5%;
     background-color: transparent;
+
 }
 
 .base {
-    display: flex;
     flex-basis: 90%;
+    background-color: #DCEDC8;
 }

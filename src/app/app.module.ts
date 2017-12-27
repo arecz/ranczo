@@ -7,6 +7,7 @@ import { LandingComponent } from './landing/landing.component';
 import { LeftBarComponent } from './left-bar/left-bar.component';
 import { RightBarComponent } from './right-bar/right-bar.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { StartComponent } from './start/start.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     LandingComponent,
     LeftBarComponent,
     RightBarComponent,
-    NavbarComponent
+    NavbarComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.right-bar-text {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 0 auto;
+    position: relative;
+    top: 10vh;
+    text-transform: uppercase;
+    letter-spacing: 1.2rem;
+    text-shadow: 1px 1px 1px #333333;
+}
