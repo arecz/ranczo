@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    height: 100vh;
+    flex: 1;
+    
+    background-color: bisque;
+
+}
+
+.right-bar, .left-bar {
+    color: purple;
+    flex-basis: 5%;
+    background-color: transparent;
+}
+
+.base {
+    display: flex;
+    flex-basis: 90%;
+}
