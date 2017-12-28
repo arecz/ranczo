@@ -4,17 +4,19 @@ import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
-import { LandingComponent } from './landing/landing.component';
-import { LeftBarComponent } from './left-bar/left-bar.component';
-import { RightBarComponent } from './right-bar/right-bar.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { StartComponent } from './start/start.component';
-import { BlogComponent } from './blog/blog.component';
-import { OfferComponent } from './offer/offer.component';
-import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './content/contact/contact.component';
+import { LandingComponent } from './core/landing/landing.component';
+import { LeftBarComponent } from './core/left-bar/left-bar.component';
+import { RightBarComponent } from './core/right-bar/right-bar.component';
+import { NavbarComponent } from './core/navbar/navbar.component';
+import { StartComponent } from './core/start/start.component';
+import { BlogComponent } from './content/blog/blog.component';
+import { OfferComponent } from './content/offer/offer.component';
+import { GalleryComponent } from './content/gallery/gallery.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './content/about/about.component';
+import { ContentService } from './content/content.service';
+import { CoreService } from './core/core.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,7 @@ import { AboutComponent } from './about/about.component';
     AppRoutingModule
 
   ],
-  providers: [],
+  providers: [ContentService, CoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,6 @@
 .container {
     display: flex;
     height: 100vh;
-    flex-grow: 1;
     
     background-image: url("../assets/img/tapestry_pattern.png");
 
@@ -18,4 +17,19 @@
 .base {
     flex-basis: 90%;
     background-color: #DCEDC8;
+}
+
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .right-bar, .left-bar {
+        display: none;
+    }
+    
 }

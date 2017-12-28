@@ -1,0 +1,29 @@
+.content-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+}
+
+.content-gallery li {
+
+    margin-bottom: 1rem;
+    flex-basis: 120px;
+    height: 120px;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.8;
+    transition: opacity .4s .05s ease-in, transform .4s .05s ease-in;
+
+}
+
+
+.content-gallery li:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+

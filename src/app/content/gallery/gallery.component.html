@@ -1,0 +1,14 @@
+
+<div class="content-container">
+  <h1 class="content-header">
+    Galeria
+  </h1>
+
+  <hr>
+
+  <ul class="content-gallery">
+    <li *ngFor = "let image of images" [ngStyle]="{'background-image': 'url(' + image + ')'}" (click) = "onImageClick(image)"></li>
+
+  </ul>
+
+</div>

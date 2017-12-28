@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContactComponent } from './contact/contact.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { BlogComponent } from './blog/blog.component';
-import { OfferComponent } from './offer/offer.component';
-import { StartComponent } from './start/start.component';
-import { LandingComponent } from './landing/landing.component';
-import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './content/contact/contact.component';
+import { GalleryComponent } from './content/gallery/gallery.component';
+import { BlogComponent } from './content/blog/blog.component';
+import { OfferComponent } from './content/offer/offer.component';
+import { StartComponent } from './core/start/start.component';
+import { LandingComponent } from './core/landing/landing.component';
+import { AboutComponent } from './content/about/about.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },

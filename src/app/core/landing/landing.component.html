@@ -1,0 +1,20 @@
+<div class="main-container">
+  <div class="left-side-container" 
+  [ngStyle]="{'background-image': 'url(' + image + ')', 'background': 'no-repeat center center', 'background-size': 'cover'}">
+  <div *ngIf="!isGalleryOn" class="left-side-container" style="height: 100%;"></div>
+  </div>
+  
+
+
+  <div class="right-side-container">
+    <div class="navbar">
+        <app-navbar></app-navbar>
+    </div>
+    <hr>
+    <div class="text-content">     
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<!-- Nałożyć perspektywę, oddalić, przewrócić stronę i znowu przybliżyć? -->

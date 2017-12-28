@@ -43,3 +43,34 @@ hr {
     text-align-last: center;
 }
 
+
+@media (max-width: 800px) {
+    .content-header {
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 0;
+    }
+    
+    .content-subheader {
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+    
+    .content-container {
+        padding: 0;
+        text-align: center;
+    }
+
+    .content-text {
+        font-weight: 300;
+        font-size: 1rem;
+        margin: 4rem;
+
+    }
+
+    hr {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
