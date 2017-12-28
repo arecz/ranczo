@@ -7,12 +7,15 @@ ul {
     margin: 1.5rem 0 2rem 0;
 }
 
-ul li {
+ul a {
     cursor: pointer;
     opacity: 0.8;
+    text-decoration: none;
+    outline: none;
+    color: #212121;
 }
 
-ul li:hover {
+ul :hover {
     animation: nav-btn-hover .4s ease-in forwards;
 }
 hr {
