@@ -26,6 +26,16 @@
 
 }
 
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 800px) {
     .main-container {
         flex-direction: column;
@@ -36,7 +46,7 @@
     .left-side-container {
         order: 1;
         flex-grow: 1;
-        min-height: 50vh;
+        min-height: 40vh;
         margin: 1rem;
     }
 

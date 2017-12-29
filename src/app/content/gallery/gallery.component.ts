@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentService } from '../content.service';
+import { OnDestroy } from '@angular/core/src/metadata/lifecycle_hooks';
 
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css']
 })
-export class GalleryComponent implements OnInit {
+export class GalleryComponent implements OnInit, OnDestroy {
 
-  images: Array<string>;
+  images: Array<{}>;
 
   constructor(private contentService: ContentService) { }
 
@@ -19,6 +20,10 @@ export class GalleryComponent implements OnInit {
 
   onImageClick(image: string) {
     this.contentService.imageActivated.next(image);
+  }
+
+  ngOnDestroy() {
+    this.contentService.imageActivated.next(this.contentService.images[5]['full']);
   }
 
 }

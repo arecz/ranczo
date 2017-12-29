@@ -1,5 +1,23 @@
+<div class="navbar-mobile-container">
 
-<ul>
+  <div id="nav-icon1" (click) = "onHamburgerClick()" [ngClass]="{open: isHamburgerOpen}">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul *ngIf = "isHamburgerOpen" class="navbar-mobile">
+    <a routerLink = "about" (click) = "onHamburgerClick()">O nas</a>
+    <a routerLink = "gallery" (click) = "onHamburgerClick()">Galeria</a>
+    <a routerLink = "blog" (click) = "onHamburgerClick()">Blog</a>
+    <a routerLink = "offer" (click) = "onHamburgerClick()">Oferta</a>
+    <a routerLink = "contact" (click) = "onHamburgerClick()">Kontakt</a>
+  </ul>
+
+</div>
+
+
+<ul class="navbar-desktop">
   <a routerLink = "about">O nas</a>
   <a routerLink = "gallery">Galeria</a>
   <a routerLink = "blog">Blog</a>

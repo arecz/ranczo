@@ -7,7 +7,7 @@
   <hr>
 
   <ul class="content-gallery">
-    <li *ngFor = "let image of images" [ngStyle]="{'background-image': 'url(' + image + ')'}" (click) = "onImageClick(image)"></li>
+    <li *ngFor = "let image of images" [ngStyle]="{'background-image': 'url(' + image.min + ')'}" (click) = "onImageClick(image.full)"></li>
 
   </ul>
 

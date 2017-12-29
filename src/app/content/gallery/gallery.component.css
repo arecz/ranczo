@@ -12,12 +12,11 @@
 .content-gallery li {
 
     margin-bottom: 1rem;
-    flex-basis: 120px;
-    height: 120px;
+    flex-basis: 140px;
+    height: 150px;
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    opacity: 0.8;
-    transition: opacity .4s .05s ease-in, transform .4s .05s ease-in;
+    transition: opacity .4s, transform .4s;
 
 }
 
