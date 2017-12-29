@@ -1,12 +1,12 @@
 
-<div class="content-container">
+<div class="content-container" [@fadeInShortAnimation]>
   <h1 class="content-header">
     Galeria
   </h1>
 
   <hr>
 
-  <ul class="content-gallery">
+  <ul class="content-gallery" [@fadeInAnimation]>
     <li *ngFor = "let image of images" [ngStyle]="{'background-image': 'url(' + image.min + ')'}" (click) = "onImageClick(image.full)"></li>
 
   </ul>

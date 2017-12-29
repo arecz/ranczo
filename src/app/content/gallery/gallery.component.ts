@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentService } from '../content.service';
 import { OnDestroy } from '@angular/core/src/metadata/lifecycle_hooks';
+import { fadeInShortAnimation } from '../../_animations/fade-in-short.animation';
+import { fadeInAnimation } from '../../_animations/fade-in.animation';
 
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.css']
+  styleUrls: ['./gallery.component.css'],
+  animations: [fadeInShortAnimation, fadeInAnimation]
 })
 export class GalleryComponent implements OnInit, OnDestroy {
 

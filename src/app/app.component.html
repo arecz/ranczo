@@ -1,11 +1,25 @@
+<div class="wrap clearfix">
+    <h1 class="loading-header">Wczytywanie...</h1>
+    <section class="clearfix">   
+      <ul class="rotate_wrapper">
+        <li class="rotate_item"><span></span></li>
+        <li class="rotate_item delay1"><span></span></li>
+        <li class="rotate_item delay2"><span></span></li>
+        <li class="rotate_item delay3"><span></span></li>
+        <li class="rotate_item delay4"><span></span></li>
+      </ul>
+    </section>
+  </div>
+
 <div class="container">
-  <div class="left-bar">
+
+  <div class="left-bar" [@fadeInLongAnimation]>
     <app-left-bar></app-left-bar>
   </div>
-  <div class="base">
+  <div class="base" [@fadeInAnimation]>
     <router-outlet></router-outlet>
   </div>
-  <div class="right-bar">
+  <div class="right-bar" [@fadeInLongAnimation]>
     <app-right-bar></app-right-bar>
   </div>
 </div>
