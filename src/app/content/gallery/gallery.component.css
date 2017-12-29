@@ -26,3 +26,23 @@
     transform: scale(1.15);
 }
 
+.loading-text {
+    transform: translateY(2rem);
+    z-index: -1;
+    width: 100%;
+    margin: 0 auto;
+    animation: fade-out 2s 0.4s forwards;
+
+
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+

@@ -1,17 +1,17 @@
 // import the required animation functions from the angular animations module
 import { trigger, state, animate, transition, style } from '@angular/animations';
 
-export const fadeInShortAnimation =
+export const fadeOutAnimation =
    // trigger name for attaching this animation to an element using the [@triggerName] syntax
-   trigger('fadeInShortAnimation', [
+   trigger('fadeOutAnimation', [
 
        // route 'enter' transition
-       transition(':enter', [
+       transition(':leave', [
 
            // css styles at start of transition
-           style({ opacity: 0 }),
+           style({ opacity: 1 }),
 
            // animation and styles at end of transition
-           animate('600ms 800ms', style({ opacity: 1 }))
+           animate('.9s 2.5s', style({ opacity: 0 }))
        ]),
    ]);
