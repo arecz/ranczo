@@ -2,7 +2,7 @@
     display: flex;
     height: 100vh;
     
-    background-image: url("../assets/img/halftone-yellow.png");
+    background-image: url("../assets/img/topography.png");
 
 }
 
@@ -16,7 +16,7 @@
 
 .base {
     flex-basis: 90%;
-    background-color: #DCEDC8;
+    background-color: transparent;
 }
 
 @media (max-width: 800px) {
