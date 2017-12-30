@@ -14,6 +14,11 @@
 
 }
 
+.right-bar:focus, .left-bar:focus {
+    outline: none;
+
+}
+
 .base {
     flex-basis: 90%;
     background-color: transparent;
@@ -28,8 +33,11 @@
         flex-direction: column;
     }
 
-    .right-bar, .left-bar {
+    .left-bar {
         display: none;
+    }
+    .right-bar {
+        order: -1;
     }
     
 }
@@ -52,6 +60,7 @@ div.wrap {
 }
 
 .loading-header {
+    color: #8BC34A;
     position: fixed;
     transform: translateY(-10rem);
     animation: spread 1.2s forwards;
@@ -89,7 +98,7 @@ ul.rotate_wrapper li.rotate_item {
     border: none;
 }
 ul.rotate_wrapper li.rotate_item span {
-    background: #689F38;
+    background: #FFC107;
     bottom: 0px;
     left: 50%;
     margin-left: -2px;

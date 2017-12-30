@@ -29,8 +29,8 @@ hr {
 
 #nav-icon1 {
     display: none;
-    width: 60px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     position: relative;
     margin: 50px auto;
     -webkit-transform: rotate(0deg);
@@ -43,14 +43,15 @@ hr {
     transition: .5s ease-in-out;
     cursor: pointer;
   }
+
   
   #nav-icon1 span {
     display: block;
     position: absolute;
-    height: 9px;
+    height: 6px;
     width: 100%;
-    background: #689F38;
-    opacity: 0.9;
+    background: #FFC107;
+    opacity: 0.8;
     left: 0;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -67,11 +68,11 @@ hr {
   }
   
   #nav-icon1 span:nth-child(2) {
-    top: 18px;
+    top: 15px;
   }
   
   #nav-icon1 span:nth-child(3) {
-    top: 36px;
+    top: 29px;
   }
   
   #nav-icon1.open span:nth-child(1) {
@@ -105,12 +106,15 @@ hr {
 
 
     75% {
+        
         transform: rotate(-7deg);
     }
 
     100% {
         transform: scale(1.4);
         opacity: 1;
+        color: #FFC107;
+        
     }
 }
 
@@ -120,6 +124,8 @@ hr {
     }
 
     #nav-icon1 {
+        opacity: 0;
+        animation: hamburgerAppearance 2s 4s forwards, jump 17s 20s linear infinite;
         display: block;
         position: fixed;
         right: 2rem;
@@ -127,11 +133,13 @@ hr {
     }
 
     .navbar-mobile {
+        box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
         height: 100vh;
+        width: 60%;
         z-index: 100;
         background: #faffeb;
         background: -moz-linear-gradient(45deg, #faffeb 6%, #f2fbdf 16%, #c7e7a2 68%, #c7e7a2 77%);
@@ -148,36 +156,64 @@ hr {
 
     .navbar-mobile a{
         flex-grow: 1;
-        text-align: center;
+        text-align: left;
         padding-top: 2rem;
-        font-size: 1.6rem;
+        padding-left: 3rem;
+        font-size: 1.3rem;
         transition: background-color 1s, color 1s;
+        border-bottom: 1px solid rgba(55, 55, 55, 0.09);
     }
 
     .slide {
-        animation: slide 1s;
+        animation: slide .7s ease-out forwards;
     }
 
-    .slideout {
-        animation: slide 1s reverse;
-    }
 
     @keyframes slide {
         0% {
-            transform: translateX(1000px) scale(0.5);
+            transform: translateX(-500px);
+
         }
 
         100% {
-            transform: translate(0) scale(1);
-            border-radius: 0;
-            
+            transform: translateX(-30px);
+            border-right: 1px solid #BDBDBD;
         }
     }
 
+    @keyframes hamburgerAppearance {
+        0% {
+            opacity: 0
+
+        }
+        45% {
+            transform: rotate(0deg);
+        }
+
+        50%, 60%, 70%, 80%, 90% {
+            opacity: 1;
+            transform: rotate(-5deg);
+        }
+        55%, 65%, 75%, 85%, 95% {
+            transform: rotate(5deg);
+        }
+        100% {
+            transform: rotate(0deg);
+            opacity: 1;
+        } 
+    }
+    @keyframes jump {
+        0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+        .25%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+        1.5% {transform: translate3d(0,70%,0) scale3d(1.5,.7,1);}
+        2.25%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+        2.5%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+        100%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+      }
+
 
     .navbar-mobile a:hover{
-        background-color: rgba(55, 55, 55, 0.4);
-        color: white;
+        background-color: #FFC107;
     }
 
 

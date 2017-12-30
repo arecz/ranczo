@@ -17,7 +17,7 @@ import { fadeInAnimation } from '../../_animations/fade-in.animation';
       state('change', style({
         
       })),
-      transition('normal <=> change', animate('1.3s ease-out', keyframes([
+      transition('normal <=> change', animate('1.2s ease-in-out', keyframes([
         style({
           transform: 'translateX(100%)',
           'opacity': '0'

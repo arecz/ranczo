@@ -15,4 +15,25 @@
     text-transform: uppercase;
     letter-spacing: 1.2rem;
     text-shadow: 1px 1px 1px #333333;
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.right-bar-text:hover {
+    transform: scale(0.6);
+}
+
+@media (max-width: 800px) {
+    .right-bar-text {
+        writing-mode: horizontal-tb;
+        text-orientation: none;
+        top: 0;
+        margin: 1.4rem 0;
+        font-size: 1.6rem;
+        letter-spacing: normal;
+        font-weight: 300;
+    }
+    .right-bar-text:hover {
+        transform: scale(1.3);
+    }
 }
