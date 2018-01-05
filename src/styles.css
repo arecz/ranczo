@@ -12,17 +12,21 @@ body {
 }
 
 .content-header {
+    font-size: 64px;
     font-size: 4rem;
     font-weight: 300;
+    margin: 0 0 38.4px 0;
     margin: 0 0 2.4rem 0;
 }
 
 .content-subheader {
+    font-size: 24px;
     font-size: 1.5rem;
     font-weight: 200;
 }
 
 .content-container {
+    padding: 0 32px;
     padding: 0 2rem;
     text-align: center;
 }
@@ -37,10 +41,13 @@ hr {
 
 .content-text {
     font-weight: 300;
+    font-size: 19.2px;
     font-size: 1.2rem;
+    margin: 64px;
     margin: 4rem;
     text-align: justify;
-    text-align-last: center;
+    -moz-text-align-last: center;
+         text-align-last: center;
 }
 
 
@@ -73,4 +80,3 @@ hr {
         margin-bottom: 2rem;
     }
 }
-

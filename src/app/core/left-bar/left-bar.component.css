@@ -5,21 +5,24 @@
 }
 
 .left-bar-text {
-    display: block;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    text-align: center;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+    display: inline-block;
+    font-size: 27.2px;
     font-size: 1.7rem;
     font-weight: 200;
-    margin: 0 auto;
-    position: relative;
-    top: 20vh;
     text-transform: uppercase;
+    letter-spacing: 12.8px;
     letter-spacing: .8rem;
     text-shadow: 1px 1px 1px #333333;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
     transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
 }
 
 .left-bar-text:hover {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
 }

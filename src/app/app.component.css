@@ -7,9 +7,11 @@
 }
 
 .right-bar, .left-bar {
-    color: #212121;
-    flex-grow: 0;
+    display: flex;
     flex-basis: 5%;
+    align-items: center;
+    justify-content: center;
+    color: #212121;
     background-color: transparent;
 
 }

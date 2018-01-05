@@ -1,5 +1,6 @@
 .navbar {
     margin-top: 1rem;
+    z-index: 1000000;
 }
 
 .main-container {
