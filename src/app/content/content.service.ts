@@ -7,29 +7,53 @@ export class ContentService {
     image: string;
     images: Array<{}> = [
         {
-            full: './assets/img/Zniwa-2014-min.jpg',
-            min: './assets/img/Zniwa-2014-min.jpg'
+            full: './assets/img/1-min.jpg',
+            min: './assets/img/1.jpg'
         },
         {
-            full: './assets/img/fabian-burghardt-84752-min.jpg',
-            min: './assets/img/Zniwa-2014-min.jpg'
+            full: './assets/img/2-min.jpg',
+            min: './assets/img/2.jpg'
         },
         {
-            full: './assets/img/filipe-dos-santos-mendes-195654-min.jpg',
-            min: './assets/img/Zniwa-2014-min.jpg'
+            full: './assets/img/3-min.jpg',
+            min: './assets/img/3.jpg'
         },
         {
-            full: './assets/img/hans-veth-397711-min.jpg',
-            min: './assets/img/Zniwa-2014-min.jpg'
+            full: './assets/img/4-min.jpg',
+            min: './assets/img/4.jpg'
         },
         {
-            full: './assets/img/joey-pilgrim-251356-min.jpg',
-            min: './assets/img/Zniwa-2014-min.jpg'
+            full: './assets/img/5-min.jpg',
+            min: './assets/img/5.jpg'
         },
         {
-            full: './assets/img/kenny-webster-417544-min.jpg',
-            min: './assets/img/Zniwa-2014-min.jpg'
-        }
+            full: './assets/img/7-min.jpg',
+            min: './assets/img/7.jpg'
+        },
+        {
+            full: './assets/img/6-min.jpg',
+            min: './assets/img/6.jpg'
+        },
+        {
+            full: './assets/img/8-min.jpg',
+            min: './assets/img/8.jpg'
+        },
+        {
+            full: './assets/img/9-min.jpg',
+            min: './assets/img/9.jpg'
+        },
+        {
+            full: './assets/img/10-min.jpg',
+            min: './assets/img/10.jpg'
+        },
+        {
+            full: './assets/img/11-min.jpg',
+            min: './assets/img/11.jpg'
+        },
+        {
+            full: './assets/img/12-min.jpg',
+            min: './assets/img/12.jpg'
+        },
     ];
 
 }

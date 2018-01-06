@@ -11,7 +11,18 @@ import { fadeInShortAnimation } from '../../_animations/fade-in-short.animation'
 })
 export class OfferComponent implements OnDestroy {
 
+  isTouristOn = false;
+  isBedOn = false;
+
   constructor(private contentService: ContentService) { }
+
+  onTouristClick() {
+    this.isTouristOn = !this.isTouristOn;
+  }
+
+  onBedClick() {
+    this.isBedOn = !this.isBedOn;
+  }
 
   ngOnDestroy() {
     this.contentService.imageActivated.next(this.contentService.images[1]['full']);

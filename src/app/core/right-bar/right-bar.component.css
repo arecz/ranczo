@@ -27,7 +27,7 @@
             transform: scale(0.6);
 } */
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
     .right-bar-text {
         -webkit-writing-mode: horizontal-tb;
             -ms-writing-mode: lr-tb;

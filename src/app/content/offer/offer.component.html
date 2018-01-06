@@ -4,15 +4,54 @@
     Oferta
   </h1>
 
-  <h3 class="content-subheader">
-    Miejsce, które stworzyliśmy z myślą o naszych gościach...
-  </h3>
-
   <hr>
+  <div class="container-text">
+    <p class="content-text">Do dyspozycji gości jest oddzielna, drewniana, stylowo wykończona 
+      chałupa z pełnym wyposażeniem kuchni i dużą otwartą werandą. Poniżej staw,  kwieciste 
+      kaczeńcowe łąki i pasące się na nich konie małopolskie. W obejściu  i jednym z budynków 
+      znajduje się wystawa etnograficzna przedmiotów gospodarstwa domowego. Poza jazdą konną 
+      można przyjemnie spacerować, uprawiać wspinaczkę skałkową, przemierzać ciekawe trasy 
+      rowerowe lub wybrać się na przechadzkę z gospodarzem, który opowie o czym szumią sosny i 
+      śpiewają ptaki.</p>
+  </div>
 
-  <p class="content-text"> Zapraszamy do miejsca Sokole Ranczo, które stworzyliśmy z myślą o naszych gościach. Każdy kto tu przyjedzie będzie mógł nie tylko odpocząć, 
-      ale także poznać piękno jurajskiej przyrody, spędzić czas w towarzystwie ludzi i zwierząt. Niezwykła energia tego pięknego miejsca u podnóża Sokolich Gór,
-      obecność koni, owiec, kóz i innych zwierząt powodują, że chce się tu być i wracać. Gospodarstwo przyjazne jest środowisku i dobrym ludziom, dąży do samowystarczalności.
-      Nieskażone środowisko, bogata flora i fauna gwarantują bardzo dobre warunki dla spokojnego i zdrowego wypoczynku.</p>
+  <div class="container-links">
+      <a (click)="onTouristClick()">Oferta Turystyczna</a>
+      <a (click)="onBedClick()">Oferta Noclegowa</a>
+  </div>
 
-</div>
+  <div *ngIf="isTouristOn" class="container-tourists" (click)="onTouristClick()">
+      <div class="tourists-content">
+        <h1 class="tourists-header">Oferta Turystyczna</h1>
+        <p>Noclegi: 35zł od osoby. Łazienka wspólna na 5 pokoi. Pokoje dwu, trzy i czteroosobowe. Masymalna ilość łóżek wynosi  15 (dodatkowo 5 dostawianych).</p>
+        <p>Jedzenie: świeże, lokalne, sezonowe produkty (mięso, sery, warzywa, pieczywo, jaja, miód, przetwory). Możliwe posiłki wegetariańskie i wegańskie po wcześniejszym uprzedzeniu.</p>
+        <ul class="tourists-list">
+          <li>Śniadanie 15 zł</li>
+          <li>Obiad/obiadokolacja 25 zł</li>
+          <li>Kolacja 15 zł</li>
+          <li>Dzieci do 3 roku życia nocleg?</li>
+          <li>Dla dzieci istnieje możliwość wykupienia posiłku tańszego o 50%?</li>
+          <li>Do dyspozycji kuchnia w której można przygotować własne posiłki</li>
+          <li>Istnieje możliwość rozpalenia ogniska, grilla, pieca chlebowego.</li>
+          <li>Możliwość negocjacji ceny przy większych, zorganizowanych grupach.</li>
+        </ul>
+      </div>
+  </div>
+
+  <div *ngIf="isBedOn" class="container-tourists" (click)="onBedClick()">
+      <div class="tourists-content">
+        <h1 class="tourists-header">Oferta Noclegowa</h1>
+        <p>Noclegi: 35zł od osoby. Łazienka wspólna na 5 pokoi. Pokoje dwu, trzy i czteroosobowe. Masymalna ilość łóżek wynosi  15 (dodatkowo 5 dostawianych).</p>
+        <p>Jedzenie: świeże, lokalne, sezonowe produkty (mięso, sery, warzywa, pieczywo, jaja, miód, przetwory). Możliwe posiłki wegetariańskie i wegańskie po wcześniejszym uprzedzeniu.</p>
+        <ul class="tourists-list">
+          <li>Śniadanie 15 zł</li>
+          <li>Obiad/obiadokolacja 25 zł</li>
+          <li>Kolacja 15 zł</li>
+          <li>Dzieci do 3 roku życia nocleg?</li>
+          <li>Dla dzieci istnieje możliwość wykupienia posiłku tańszego o 50%?</li>
+          <li>Do dyspozycji kuchnia w której można przygotować własne posiłki</li>
+          <li>Istnieje możliwość rozpalenia ogniska, grilla, pieca chlebowego.</li>
+          <li>Możliwość negocjacji ceny przy większych, zorganizowanych grupach.</li>
+        </ul>
+      </div>
+  </div>

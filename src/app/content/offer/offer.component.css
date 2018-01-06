@@ -1,0 +1,59 @@
+.container-links {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.container-links a {
+    font-size: 2rem;
+    flex-basis: 40%;
+    background-color: #FFC107;
+    color: white;
+    cursor: pointer;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 11px #DDA005;
+    transition: transform 0.2s 0.02s, box-shadow 0.2s 0.02s;
+}
+
+.container-links a:hover {
+    transform: translateY(3px);
+    box-shadow: 0 7px #DDA005;
+}
+
+.container-links a:active {
+    transform: translateY(8px);
+    box-shadow: none;
+}
+
+.container-tourists {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(55, 55, 55, 0.7);
+}
+
+.tourists-content {
+    padding: 4rem 10rem;
+    height: 80vh;
+    width: 60%;
+    position: relative;
+    top: 10vh;
+    margin: 0 auto;
+    background-color: #DCEDC8;
+}
+
+.tourists-list {
+    list-style-type: circle;
+    text-align: left;
+    margin: 0;
+    padding: 2rem;
+}
+.tourists-list li{
+    margin-bottom: .5rem;
+}
+
