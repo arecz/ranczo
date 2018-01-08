@@ -19,10 +19,14 @@ export class OfferComponent implements OnDestroy {
 
   onTouristClick() {
     this.isTouristOn = !this.isTouristOn;
+    this.isBedOn = false;
+    window.scrollTo(0, 0);
   }
 
   onBedClick() {
     this.isBedOn = !this.isBedOn;
+    this.isTouristOn = false;
+    window.scrollTo(0, 0);
   }
 
   ngOnDestroy() {

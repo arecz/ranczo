@@ -75,24 +75,30 @@
     }
 
     .container-tourists {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: rgba(55, 55, 55, 0.7);
         z-index: 100000;
         font-size: .9rem;
+        background-color: transparent;     
+        
     }
 
     .tourists-content {
-        padding: 1.5rem;
+        padding: .5rem;
         height: 95vh;
         width: 90%;
         position: relative;
         top: 2.5vh;
         margin: 0 auto;
         background-color: #DCEDC8;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
+}
+
+.content-header {
+    font-size: 2rem;
 }
