@@ -50,25 +50,77 @@ hr {
          text-align-last: center;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
+    
+        .content-header {
+            font-size: 2.8rem;
+        }
+        
+        .content-subheader {
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+        
+        .content-container {
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+        .content-text {
+            font-weight: 300;
+            font-size: 1rem;
+            margin: 1rem;
+            text-align: justify;
+            -moz-text-align-last: center;
+                 text-align-last: center;
+        }
+    }
+
+
+
+@media (max-width: 1360px) {
+    
+        .content-header {
+            font-size: 2.4rem;
+        }
+        
+        .content-subheader {
+            font-size: 1rem;
+        }
+        
+        .content-container {
+            padding: 0;
+            text-align: center;
+        }
+        .content-text {
+            font-weight: 300;
+            font-size: .9rem;
+            margin: .5rem .9rem;
+            text-align: justify;
+            -moz-text-align-last: center;
+                 text-align-last: center;
+        }
+    }
+
+/* Mobile Media */
+
+@media (max-width: 1100px) {
 
     .content-header {
-        font-size: 3.2rem;
+        font-size: 2.4rem;
     }
     
     .content-subheader {
         font-size: 1.2rem;
-        font-weight: 200;
     }
     
     .content-container {
-        padding: 0 1rem;
+        padding: 0 .3rem;
         text-align: center;
     }
     .content-text {
         font-weight: 300;
         font-size: 1.1rem;
-        margin: 2.5rem;
+        margin: 1.5rem;
         text-align: justify;
         -moz-text-align-last: center;
              text-align-last: center;
@@ -76,7 +128,7 @@ hr {
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
     .content-header {
         margin-top: 0;
     }
@@ -96,7 +148,7 @@ hr {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .content-header {
         font-size: 3rem;
         margin: 0;

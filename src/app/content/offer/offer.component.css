@@ -6,13 +6,13 @@
 }
 
 .container-links a {
-    font-size: 2rem;
+    font-size: 1.6rem;
     flex-basis: 40%;
     background-color: #FFC107;
     color: white;
     cursor: pointer;
-    padding: 2rem;
-    margin-bottom: 1rem;
+    padding: 1.6rem;
+    margin: 1rem 0;
     border-radius: 20px;
     box-shadow: 0 11px #DDA005;
     transition: transform 0.2s 0.02s, box-shadow 0.2s 0.02s;
@@ -35,6 +35,7 @@
     height: 100vh;
     width: 100%;
     background-color: rgba(55, 55, 55, 0.7);
+    z-index: 100000;
 }
 
 .tourists-content {
@@ -57,3 +58,41 @@
     margin-bottom: .5rem;
 }
 
+
+@media (max-width: 1100px) {
+    
+    .container-links a {
+        font-size: 1rem;
+        flex-basis: 40%;
+        background-color: #FFC107;
+        color: white;
+        cursor: pointer;
+        padding: 1rem;
+        margin: 2rem 0;
+        border-radius: 20px;
+        box-shadow: 0 11px #DDA005;
+        transition: transform 0.2s 0.02s, box-shadow 0.2s 0.02s;
+    }
+
+    .container-tourists {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(55, 55, 55, 0.7);
+        z-index: 100000;
+        font-size: .9rem;
+    }
+
+    .tourists-content {
+        padding: 1.5rem;
+        height: 90vh;
+        width: 80%;
+        position: relative;
+        top: 5vh;
+        margin: 0 auto;
+        background-color: #DCEDC8;
+    }
+
+}

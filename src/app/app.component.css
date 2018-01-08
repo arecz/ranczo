@@ -1,9 +1,7 @@
 .container {
     display: flex;
     height: 100vh;
-    
     background-image: url("../assets/img/wov.png");
-
 }
 
 .right-bar, .left-bar {
