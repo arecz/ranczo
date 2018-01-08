@@ -58,6 +58,11 @@
     margin-bottom: .5rem;
 }
 
+.fa {
+    color: #DDA005;
+
+}
+
 
 @media (max-width: 1100px) {
     
@@ -101,4 +106,17 @@
 
 .content-header {
     font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+}
+
+@media (max-width: 400px) {
+    .container-tourists {
+
+        
+    }
+
+    .tourists-content {
+        height: 900px;
+    }
+
 }
