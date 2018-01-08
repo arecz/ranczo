@@ -6,7 +6,7 @@
     <span></span>
   </div>
 
-  <ul *ngIf = "isHamburgerOpen" class="navbar-mobile" [ngClass]="{slide: isHamburgerOpen}">
+  <ul *ngIf = "isHamburgerOpen" class="navbar-mobile" [ngClass]="{slide: isHamburgerOpen}" [@fadeInExtraShortAnimation]>
     <a routerLink = "about" (click) = "onHamburgerClick()">O nas</a>
     <a routerLink = "gallery" (click) = "onHamburgerClick()">Galeria</a>
     <a routerLink = "blog" (click) = "onHamburgerClick()">Blog</a>

@@ -1,7 +1,7 @@
 .container {
     display: flex;
     height: 100vh;
-    background-image: url("../assets/img/wov.png");
+    background-image: url("../assets/img/sprinkles.png");
 }
 
 .right-bar, .left-bar {

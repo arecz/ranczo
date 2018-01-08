@@ -4,14 +4,18 @@
     Oferta
   </h1>
 
+  <h3 class="content-subheader">
+    Czyli po prostu... zapraszamy!
+  </h3>
+
   <hr>
   <div class="container-text">
-    <p class="content-text">Do dyspozycji gości jest oddzielna, drewniana, stylowo wykończona 
+    <p class="content-text"><em>Do dyspozycji gości</em> jest oddzielna, drewniana, stylowo wykończona 
       chałupa z pełnym wyposażeniem kuchni i dużą otwartą werandą. Poniżej staw,  kwieciste 
       kaczeńcowe łąki i pasące się na nich konie małopolskie. W obejściu  i jednym z budynków 
-      znajduje się wystawa etnograficzna przedmiotów gospodarstwa domowego. Poza jazdą konną 
+      znajduje się wystawa etnograficzna przedmiotów gospodarstwa domowego. Poza <em>jazdą konną</em>
       można przyjemnie spacerować, uprawiać wspinaczkę skałkową, przemierzać ciekawe trasy 
-      rowerowe lub wybrać się na przechadzkę z gospodarzem, który opowie o czym szumią sosny i 
+      rowerowe lub wybrać się na <em>przechadzkę z gospodarzem</em>, który opowie o czym szumią sosny i 
       śpiewają ptaki.</p>
   </div>
 
@@ -22,9 +26,9 @@
       <a (click)="onBedClick()">Oferta Noclegowa</a>
   </div>
 
-  <div *ngIf="isTouristOn" class="container-tourists" (click)="onTouristClick()">
+  <div *ngIf="isTouristOn" class="container-tourists" (click)="onTouristClick()" [@fadeInExtraShortAnimation]>
       <div class="tourists-content">
-        <h1 class="tourists-header">Oferta Turystyczna</h1>
+        <h1 class="content-header">Oferta Turystyczna</h1>
         <p>Noclegi: 35zł od osoby. Łazienka wspólna na 5 pokoi. Pokoje dwu, trzy i czteroosobowe. Masymalna ilość łóżek wynosi  15 (dodatkowo 5 dostawianych).</p>
         <p>Jedzenie: świeże, lokalne, sezonowe produkty (mięso, sery, warzywa, pieczywo, jaja, miód, przetwory). Możliwe posiłki wegetariańskie i wegańskie po wcześniejszym uprzedzeniu.</p>
         <ul class="tourists-list">
@@ -40,9 +44,9 @@
       </div>
   </div>
 
-  <div *ngIf="isBedOn" class="container-tourists" (click)="onBedClick()">
+  <div *ngIf="isBedOn" class="container-tourists" (click)="onBedClick()" [@fadeInExtraShortAnimation]>
       <div class="tourists-content">
-        <h1 class="tourists-header">Oferta Noclegowa</h1>
+        <h1 class="content-header">Oferta Noclegowa</h1>
         <p>Noclegi: 35zł od osoby. Łazienka wspólna na 5 pokoi. Pokoje dwu, trzy i czteroosobowe. Masymalna ilość łóżek wynosi  15 (dodatkowo 5 dostawianych).</p>
         <p>Jedzenie: świeże, lokalne, sezonowe produkty (mięso, sery, warzywa, pieczywo, jaja, miód, przetwory). Możliwe posiłki wegetariańskie i wegańskie po wcześniejszym uprzedzeniu.</p>
         <ul class="tourists-list">

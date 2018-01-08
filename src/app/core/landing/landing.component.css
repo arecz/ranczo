@@ -16,7 +16,7 @@
     background-size: cover; 
     box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
     filter: blur(1px);
-    filter: opacity(70%);
+    filter: opacity(80%);
 }
 
 .right-side-container {

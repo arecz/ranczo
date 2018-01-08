@@ -177,7 +177,7 @@ hr {
             -ms-flex-direction: column;
                 flex-direction: column;
         height: 100vh;
-        width: 60%;
+        width: 40%;
         z-index: 100;
         background: #faffeb;
         background: -webkit-gradient(left bottom, right top, color-stop(6%, #faffeb), color-stop(16%, #f2fbdf), color-stop(68%, #c7e7a2), color-stop(77%, #c7e7a2));

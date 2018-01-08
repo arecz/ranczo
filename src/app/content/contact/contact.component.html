@@ -9,10 +9,19 @@
   </h3>
 
   <hr>
-  <div class="container-text">
-    <p class="content-text">solarz_m@wp.pl</p>
-    <p class="content-text">Ołpiny 512, gmina Szerzyny, powiat tarnowski, 38-247, województwo małopolskie</p>
-    <p class="content-text">Telefon:  791 157 862</p>
-    <p class="content-text">FB</p>
+  <div class="container-contact">
+    <i class="fa fa-envelope fa-5x" aria-hidden="true" (click) ="onMailClick()"></i>
+    <i class="fa fa-address-book-o fa-5x orange" aria-hidden="true" (click) ="onAddressClick()"></i>
+    <i class="fa fa-phone-square fa-5x" aria-hidden="true" (click) ="onPhoneClick()"></i>
+    <i class="fa fa-facebook-square fa-5x orange" aria-hidden="true" (click) ="onFacebookClick()"></i>
+  </div>
+
+  
+  <div class="container-text" [ngSwitch]="offerSwitchValue">
+    <p class="content-text" *ngSwitchCase="'mail'" [@fadeInShortAnimation]>Mail: solarz_m@wp.pl</p>
+    <p class="content-text" *ngSwitchCase="'address'" [@fadeInShortAnimation]>Adres: Ołpiny 512, gmina Szerzyny, powiat tarnowski, 38-247, województwo małopolskie</p>
+    <p class="content-text" *ngSwitchCase="'phone'" [@fadeInShortAnimation]>Telefon:  791 157 862</p>
+    <a class="content-text" *ngSwitchCase="'fb'" [@fadeInShortAnimation] href="https://pl-pl.facebook.com/Paryja-Stajnia-i-Gospodarstwo-Agroturystyczne-226923544090841/" target="_blank">Kliknij tutaj aby odwiedzić naszego facebooka!</a>
+    <p class="content-text" *ngSwitchDefault>Wybierz interesującą Cię pozycję</p>
   </div>
 </div>

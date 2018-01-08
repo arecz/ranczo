@@ -1,5 +1,5 @@
 * {
-    font-family: "Lato";
+    font-family: "Raleway";
     box-sizing: border-box;
 }
 
@@ -11,25 +11,30 @@ body {
     padding: 0;
 }
 
+em {
+    color: #DDA005;
+}
+
 .container-text {
     margin-top: 3rem;
-    margin-bottom: 3rem;
 }
 
 .content-header {
     font-size: 4rem;
     font-weight: 300;
-    margin: 1.5rem 0 1rem 0;
+    margin: 0;
+    color: #388E3C;
 }
 
 .content-subheader {
     font-size: 1.5rem;
     font-weight: 200;
     margin-bottom: 3rem;
+    color: #DDA005;
 }
 
 .content-container {
-    padding: 0 2rem;
+    padding-top: 2rem;
     text-align: center;
 }
 
@@ -42,8 +47,9 @@ hr {
 }
 
 .content-text {
-    font-weight: 300;
-    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
     margin: 1rem 4rem;
     text-align: justify;
     -moz-text-align-last: center;
@@ -59,15 +65,16 @@ hr {
         .content-subheader {
             font-size: 1.4rem;
             font-weight: 300;
+            margin-bottom: 2rem;
         }
         
         .content-container {
-            padding: 0 1.5rem;
+            padding: 0 1.2rem;
             text-align: center;
         }
         .content-text {
-            font-weight: 300;
-            font-size: 1rem;
+            font-weight: 400;
+            font-size: .9rem;
             margin: 1rem;
             text-align: justify;
             -moz-text-align-last: center;
@@ -92,7 +99,8 @@ hr {
             text-align: center;
         }
         .content-text {
-            font-weight: 300;
+            line-height: 1.2rem;
+            font-weight: 400;
             font-size: .9rem;
             margin: .5rem .9rem;
             text-align: justify;
@@ -118,6 +126,7 @@ hr {
         text-align: center;
     }
     .content-text {
+        line-height: 1.5rem;
         font-weight: 300;
         font-size: 1.1rem;
         margin: 1.5rem;

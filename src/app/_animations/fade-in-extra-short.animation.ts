@@ -1,9 +1,9 @@
 // import the required animation functions from the angular animations module
 import { trigger, state, animate, transition, style } from '@angular/animations';
 
-export const fadeInShortAnimation =
+export const fadeInExtraShortAnimation =
    // trigger name for attaching this animation to an element using the [@triggerName] syntax
-   trigger('fadeInShortAnimation', [
+   trigger('fadeInExtraShortAnimation', [
 
        // route 'enter' transition
        transition(':enter', [
@@ -12,7 +12,14 @@ export const fadeInShortAnimation =
            style({ opacity: 0 }),
 
            // animation and styles at end of transition
-           animate('600ms 800ms', style({ opacity: 1 }))
+           animate('300ms 50ms', style({ opacity: 1 }))
        ]),
-
+       transition(':leave', [
+        
+                   // css styles at start of transition
+                   style({ opacity: 1 }),
+        
+                   // animation and styles at end of transition
+                   animate('300ms 50ms', style({ opacity: 0 }))
+               ]),
    ]);
