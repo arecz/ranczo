@@ -39,7 +39,7 @@
 }
 
 .tourists-content {
-    padding: 4rem 10rem;
+    padding: 3rem 5rem;
     height: 80vh;
     width: 60%;
     position: relative;
@@ -60,6 +60,7 @@
 
 .fa {
     color: #DDA005;
+    position: relative;
 
 }
 
@@ -92,7 +93,6 @@
     }
 
     .tourists-content {
-        padding: .5rem;
         height: 95vh;
         width: 90%;
         position: relative;
@@ -104,15 +104,15 @@
 
 }
 
-.content-header {
-    font-size: 2rem;
-    margin: 2rem 0 1rem 0;
-}
 
-@media (max-width: 400px) {
-    .container-tourists {
 
-        
+@media (max-width: 480px) {
+    .tourists-content {
+        padding: .5rem;
+    }
+    .header-small {
+        font-size: 2rem;
+        margin: 2rem 0 1rem 0;
     }
 
     .tourists-content {

@@ -1,5 +1,5 @@
 * {
-    font-family: "Raleway";
+    font-family: "Roboto Slab";
     box-sizing: border-box;
 }
 
@@ -12,7 +12,9 @@ body {
 }
 
 em {
-    color: #DDA005;
+    color: #27ae60;
+    font-style: normal;
+
 }
 
 .container-text {
@@ -20,17 +22,16 @@ em {
 }
 
 .content-header {
-    font-size: 4rem;
+    color: #27ae60;
+    font-size: 3.6rem;
     font-weight: 300;
     margin: 0;
-    color: #388E3C;
 }
 
 .content-subheader {
-    font-size: 1.5rem;
-    font-weight: 200;
+    font-size: 1.2rem;
+    font-weight: 300;
     margin-bottom: 3rem;
-    color: #DDA005;
 }
 
 .content-container {
@@ -50,7 +51,7 @@ hr {
     line-height: 1.5rem;
     font-weight: 400;
     font-size: 1rem;
-    margin: 1rem 4rem;
+    margin: 1rem 6rem;
     text-align: justify;
     -moz-text-align-last: center;
          text-align-last: center;
@@ -173,3 +174,12 @@ hr {
         margin: 2rem;
     }
 }
+
+footer {
+    margin-top: 12rem;
+    width: 100%;
+    font-size: .75rem;
+    color: #323232;
+
+}
+

@@ -10,17 +10,16 @@
 }
 
 .left-side-container {
-    background-image: url('../../../assets/img/main.jpg');
+    background: url('../../../assets/img/annie-spratt-min.jpg') no-repeat center bottom;
     flex-grow: 1;
     flex-basis: 50%;
     background-size: cover; 
     box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-    filter: blur(1px);
-    filter: opacity(80%);
+    filter: saturate(1.1);
 }
 
 .right-side-container {
-    background-color: #DCEDC8;
+    background-color: #CCDDC9;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); 
     flex-basis: 50%;
     flex-grow: 1;
