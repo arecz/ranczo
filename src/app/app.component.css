@@ -56,15 +56,16 @@ div.wrap {
     align-items: center;
     z-index: -1;
     background-image: url("../assets/img/tapestry_pattern.png");
-    animation: fade-out 2.5s forwards;
+    animation: fade-out 4.4s forwards;
 
 }
 
 .loading-header {
+    opacity: 0;
     color: #8BC34A;
     position: fixed;
     transform: translateY(-10rem);
-    animation: spread 1.2s forwards;
+    animation: spread 1.8s .5s forwards;
 }
 
 .rotate_wrapper {
