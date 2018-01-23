@@ -1,7 +1,7 @@
 .container {
     display: flex;
     height: 100vh;
-    background-image: url("../assets/img/sprinkles.png");
+    background-image: url("../assets/img/back.png");
 }
 
 .right-bar, .left-bar {

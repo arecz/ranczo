@@ -47,12 +47,17 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.text-spacing {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .content-text {
     line-height: 1.5rem;
     font-weight: 400;
     font-size: 1rem;
     margin: 1rem 6rem;
-    text-align: justify;
+    text-align: center;
     -moz-text-align-last: center;
          text-align-last: center;
 }
@@ -179,7 +184,7 @@ footer {
     margin-top: 12rem;
     width: 100%;
     font-size: .75rem;
-    color: #323232;
+    color: #27ae60;
 
 }
 
