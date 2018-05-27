@@ -1,25 +1,31 @@
 .container {
     display: flex;
     height: 100vh;
-    
-    background-image: url("../assets/img/halftone-yellow.png");
-
+    background-image: url("../assets/img/back.png");
 }
 
 .right-bar, .left-bar {
-    color: #212121;
-    flex-grow: 0;
+    display: flex;
     flex-basis: 5%;
+    align-items: center;
+    justify-content: center;
+    color: #212121;
     background-color: transparent;
+
+}
+
+.right-bar:focus, .left-bar:focus {
+    outline: none;
 
 }
 
 .base {
     flex-basis: 90%;
-    background-color: #DCEDC8;
+    background-color: transparent;
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 1100px) {
     .container {
         display: flex;
         height: 100%;
@@ -28,8 +34,11 @@
         flex-direction: column;
     }
 
-    .right-bar, .left-bar {
+    .left-bar {
         display: none;
+    }
+    .right-bar {
+        order: -1;
     }
     
 }
@@ -47,18 +56,22 @@ div.wrap {
     align-items: center;
     z-index: -1;
     background-image: url("../assets/img/tapestry_pattern.png");
-    animation: fade-out 2.5s forwards;
+    animation: fade-out 5s forwards;
 
 }
 
 .loading-header {
+    opacity: 0;
+    color: #8BC34A;
     position: fixed;
     transform: translateY(-10rem);
-    animation: spread 1.2s forwards;
+    animation: spread 1s 1s forwards;
 }
 
 .rotate_wrapper {
+    opacity: 0;
   transform: scale(2.5);
+  animation: fade-out 1s reverse forwards;
 }
 
 section {
@@ -89,7 +102,7 @@ ul.rotate_wrapper li.rotate_item {
     border: none;
 }
 ul.rotate_wrapper li.rotate_item span {
-    background: #689F38;
+    background: #FFC107;
     bottom: 0px;
     left: 50%;
     margin-left: -2px;

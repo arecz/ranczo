@@ -4,12 +4,16 @@
     Galeria
   </h1>
 
+  <h3 class="content-subheader">
+    Oto nasz mały świat!
+  </h3>
+
   <hr>
+  <div class="container-gallery">
+    <h3 class="loading-text">Wczytywanie...</h3>
+    <ul class="content-gallery" [@fadeInAnimation]>
+      <li *ngFor = "let image of images" [ngStyle]="{'background-image': 'url(' + image.min + ')'}" (click) = "onImageClick(image.full)"></li>
 
-  <h3 class="loading-text">Wczytywanie...</h3>
-  <ul class="content-gallery" [@fadeInAnimation]>
-    <li *ngFor = "let image of images" [ngStyle]="{'background-image': 'url(' + image.min + ')'}" (click) = "onImageClick(image.full)"></li>
-
-  </ul>
-
+    </ul>
+  </div>
 </div>

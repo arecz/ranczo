@@ -17,7 +17,6 @@ import { GalleryComponent } from './content/gallery/gallery.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './content/about/about.component';
 import { ContentService } from './content/content.service';
-import { CoreService } from './core/core.service';
 
 @NgModule({
   declarations: [
@@ -34,14 +33,12 @@ import { CoreService } from './core/core.service';
     AboutComponent
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
     HttpModule,
     AppRoutingModule,
     BrowserAnimationsModule
 
   ],
-  providers: [ContentService, CoreService],
+  providers: [ContentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

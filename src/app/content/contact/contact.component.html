@@ -5,14 +5,30 @@
   </h1>
 
   <h3 class="content-subheader">
-    Miejsce, które stworzyliśmy z myślą o naszych gościach...
+    Zainteresowała Cię nasza oferta? Tu są nasze namiary!
   </h3>
 
   <hr>
+  <div class="container-contact">
+    <i class="fa fa-envelope fa-5x" aria-hidden="true" (click) ="onMailClick()"></i>
+    <i class="fa fa-address-book-o fa-5x orange" aria-hidden="true" (click) ="onAddressClick()"></i>
+    <i class="fa fa-phone-square fa-5x" aria-hidden="true" (click) ="onPhoneClick()"></i>
+    <i class="fa fa-facebook-square fa-5x orange" aria-hidden="true" (click) ="onFacebookClick()"></i>
+  </div>
 
-  <p class="content-text"> Zapraszamy do miejsca Sokole Ranczo, które stworzyliśmy z myślą o naszych gościach. Każdy kto tu przyjedzie będzie mógł nie tylko odpocząć, 
-      ale także poznać piękno jurajskiej przyrody, spędzić czas w towarzystwie ludzi i zwierząt. Niezwykła energia tego pięknego miejsca u podnóża Sokolich Gór,
-      obecność koni, owiec, kóz i innych zwierząt powodują, że chce się tu być i wracać. Gospodarstwo przyjazne jest środowisku i dobrym ludziom, dąży do samowystarczalności.
-      Nieskażone środowisko, bogata flora i fauna gwarantują bardzo dobre warunki dla spokojnego i zdrowego wypoczynku.</p>
+  
+  <div class="container-text" [ngSwitch]="offerSwitchValue">
+    <p class="content-text" *ngSwitchCase="'mail'" [@fadeInShortAnimation]>Mail: solarz_m@wp.pl</p>
+    <p class="content-text" *ngSwitchCase="'address'" [@fadeInShortAnimation]>Adres: Ołpiny 512, gmina Szerzyny, powiat tarnowski, 38-247, województwo małopolskie</p>
+    <p class="content-text" *ngSwitchCase="'phone'" [@fadeInShortAnimation]>Mietek:  791 157 862</p>
+    <a class="content-text" *ngSwitchCase="'fb'" [@fadeInShortAnimation] href="https://pl-pl.facebook.com/Paryja-Stajnia-i-Gospodarstwo-Agroturystyczne-226923544090841/" target="_blank">Kliknij tutaj aby odwiedzić naszego facebooka!</a>
+    <p class="content-text" *ngSwitchDefault>Wybierz interesującą Cię pozycję</p>
+  </div>
 
+  
+  
+  <footer>
+      <hr>
+      <p>Strona: Webarq.pl - Arkadiusz Mierzejewski, <i class="fa fa-copyright" aria-hidden="true"></i> 2017, ark.mierzejewski@gmail.com</p>
+  </footer>
 </div>

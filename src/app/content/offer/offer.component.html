@@ -1,18 +1,129 @@
-
 <div class="content-container" [@fadeInShortAnimation]>
   <h1 class="content-header">
     Oferta
   </h1>
 
   <h3 class="content-subheader">
-    Miejsce, które stworzyliśmy z myślą o naszych gościach...
+    Czyli po prostu... zapraszamy!
   </h3>
 
   <hr>
+  <div class="container-text">
+    <p class="content-text">
+      <em>Do dyspozycji gości</em> jest oddzielna, drewniana, stylowo wykończona chałupa z pełnym wyposażeniem kuchni i dużą
+      otwartą werandą. Poniżej staw, kwieciste kaczeńcowe łąki i pasące się na nich konie małopolskie. W obejściu i jednym
+      z budynków znajduje się wystawa etnograficzna przedmiotów gospodarstwa domowego. Poza
+      <em>jazdą konną</em>
+      można przyjemnie spacerować, uprawiać wspinaczkę skałkową, przemierzać ciekawe trasy rowerowe lub wybrać się na
+      <em>przechadzkę z gospodarzem</em>, który opowie o czym szumią sosny i śpiewają ptaki.</p>
+  </div>
 
-  <p class="content-text"> Zapraszamy do miejsca Sokole Ranczo, które stworzyliśmy z myślą o naszych gościach. Każdy kto tu przyjedzie będzie mógł nie tylko odpocząć, 
-      ale także poznać piękno jurajskiej przyrody, spędzić czas w towarzystwie ludzi i zwierząt. Niezwykła energia tego pięknego miejsca u podnóża Sokolich Gór,
-      obecność koni, owiec, kóz i innych zwierząt powodują, że chce się tu być i wracać. Gospodarstwo przyjazne jest środowisku i dobrym ludziom, dąży do samowystarczalności.
-      Nieskażone środowisko, bogata flora i fauna gwarantują bardzo dobre warunki dla spokojnego i zdrowego wypoczynku.</p>
+  <hr class="text-spacing">
 
-</div>
+  <div class="container-links">
+    <a (click)="onTouristClick()">Oferta&nbsp;Turystyczna</a>
+    <a (click)="onBedClick()">Oferta&nbsp;Noclegowa</a>
+  </div>
+
+  <div *ngIf="isTouristOn" class="container-tourists" (click)="onTouristClick()" [@fadeInExtraShortAnimation]>
+    <div class="tourists-content">
+      <p class="tourists-text strong">Imprezy Stałe</p>
+      <ul class="tourists-list">
+        <li>Żniwa w Paryi (II weekend sierpnia)</li>
+        <li>Sianokosy w Paśmie Brzanka-Liwocz (II połowa czerwca)</li>
+        <li>Ogólnopolskie zawody konne TREC PTTK (ostatni weekend sierpnia)</li>
+        <li>Mistrzostwa Polski w zjazdach na workach ze słomą (ferie zimowe)</li>
+      </ul>
+      <p class="tourists-text strong">Wycieczki tematyczne (prowadzi gospodarz lub przewodnik)</p>
+      <ul class="tourists-list">
+        <li>botaniczno - geologiczne (Rozpoznawanie roślin i skał)</li>
+        <li>etnograficzno - historyczne (np. Szlakiem okopów i cmentarzy z I wojny światowej)
+        </li>
+        <li>krajoznawcze - rolnicze (Rolnictwo ekologiczne oczami praktyka)</li>
+      </ul>
+      <p class="tourists-text strong">Warsztaty</p>
+      <ul class="tourists-list">
+        <li>Zielarskie</li>
+        <li>Fotograficzne</li>
+        <li>Ceramiczne</li>
+        <li>Szydełkowanie</li>
+        <li>Tradycyjne rzemiosła (kołodziejskie, bednarskie, ciesielskie - budownictwo drewniane, kręcenie powrozów)</li>
+        <li>Kuchnia regionalna (pieczenia proziaków)</li>
+      </ul>
+      <p class="tourists-text strong">Imprezy okolicznościowe</p>
+      <ul class="tourists-list">
+        <li>urodzinowe</li>
+        <li>wieczory panieńskie/kawalerskie</li>
+        <li>święta rodzinne</li>
+        <li>firmowe integracyjne</li>
+      </ul>
+      <p class="tourists-text strong">Oferta do samodzielnej realizacji</p>
+      <ul class="tourists-list">
+        <li>wycieczki rowerowe – gęsta sieć dróg o niewielkim ruchu samochodowym i pięknych krajobrazach</li>
+        <li>wspinaczka skałkowa – Skały „Borówki” w Żurowej</li>
+        <li>W niedalekiej odległości można podziwiać wpisane na listę UNESCO kościółki i cerkwie drewniane (pogranicze pogórzańsko-łemkowskie)
+          oraz galicyjskie miasteczka: Biecz, Tuchów, Ciężkowice, Pilzno, Brzostek</li>
+        <li>piesze wycieczki na wieże widokowe na Brzance lub Liwoczu</li>
+        <li>fotografia ślubna</li>
+      </ul>
+      <p class="tourists-text strong">Oferta konna</p>
+      <ul class="tourists-list">
+        <li>nauka jazdy konnej</li>
+        <li>przejażdżki i wycieczki terenowe</li>
+        <li>rajdy (szlakami „Karpackie Podkowy”)</li>
+        <li>przejażdżki zaprzęgiem, kuligi, obozy</li>
+        <li>treningi do zawodów TREC PTTK</li>
+      </ul>
+    </div>
+  </div>
+
+  <div *ngIf="isBedOn" class="container-tourists" (click)="onBedClick()" [@fadeInExtraShortAnimation]>
+    <div class="tourists-content">
+      <p class="tourists-text strong">Oferta Noclegowa</p>
+      <p class="tourists-text">W obrębie gospodarstwa znajdują się trzy budynki noclegowe:</p>
+      <ul class="tourists-list">
+        <li>Chałupa – budynek mieszkalny</li>
+        <li>Skansen – wystawa etnograficzna na parterze, miejsca noclegowe na poddaszu</li>
+        <li>Gniewnik – budynek gospodarczy na parterze, samotnia na poddaszu</li>
+      </ul>
+      <p class="tourists-text">Rozmieszczenie pomieszczeń w chałupie:</p>
+      <ul class="tourists-list">
+        <li>Parter – kuchnia z salą biesiadną i kominkiem, mały pokój 2-osobowy, wspólna łazienka, sień/korytarz</li>
+        <li>Poddasze – dwa oddzielne pomieszczenia sypialne (łącznie 9 łóżek)</li>
+      </ul>
+      <p class="tourists-text strong">Nocleg</p>
+      <p class="tourists-text">Cena jednego noclegu od osoby w Chałupie:</p>
+      <ul class="tourists-list">
+        <li>Dorośli – 35zł</li>
+        <li>Dzieci od 1 do 10 lat - 25zł</li>
+        <li>Dzieci powyżej 10 lat - 35zł</li>
+        <li>Zwierzęta (pies, kot, królik itp.) - 15zł</li>
+      </ul>
+      <p class="tourists-text">Dzieci do pierwszego roku mają zapewniony darmowy nocleg. Minimalna kwota wynajmu całej chałupy wynosi 105 zł (lub
+        minimum 3 osoby).</p>
+      <p class="tourists-text">Cena jednego noclegu od osoby poza Chałupą:</p>
+      <p class="tourists-text">(Brak dostępu do kuchni i łazienki w Chałupie - woda ze źródła, etno toi-toi, kąpiel w potoku).</p>
+      <ul class="tourists-list">
+        <li>nocleg na poddaszu Skansenu i Gniewnika (dostępne materace, karimaty, sienniki słomiane) – 15 zł </li>
+        <li>rozbicie namiotu – 5 zł od osoby</li>
+        <li>ustawienie przyczepy campingowej – 50 zł doba od przyczepy</li>
+      </ul>
+      <p class="tourists-text">Istnieje możliwość negocjacji cen w przypadku dłuższych pobytów (powyżej 5 dni) lub dla grup liczniejszych niż 7 osób.</p>
+      <p class="tourists-text">W przypadku długich weekendów (majówka, sylwester itp.) ceny ustalane są oddzielnie.</p>
+      <p class="tourists-text strong">Wyżywienie</p>
+      <p class="tourists-text">Oferujemy całodobowe wyżywienie (ze wskazaniem na obiady/obiadokolacje). Posiłki podawane są w Domu gospodarzy (70m
+        od Chałupy). </p>
+      <p class="tourists-text">Cena od osoby wynosi: za śniadanie 15zł, obiad 25zł, zaś kolacja 15zł. </p>
+      <p class="tourists-text">Dodatkowe informacje dotyczące posiłków: </p>
+      <ul class="tourists-list">
+        <li>Dla dzieci do 10 lat cena posiłku stanowi połowę powyższych kwot.</li>
+        <li>Ognisko 50zł od grupy (miejsce + opał)</li>
+        <li>Dostępna w Chałupie kuchnia jest w pełni wyposażona do przygotowywania samodzielnych posiłków..</li>
+        <li>Na specjalne życzenie możemy przygotować dania wegetariańskie i wegańskie.</li>
+        <li>Prosimy o wcześniejsze uprzedzenie nas o wybranym sposobie wyżywienia.</li>
+      </ul>
+      <p class="tourists-text">W zależności od pory roku i dostępności staramy się przyrządzać posiłki w oparciu o własne ekologiczne produkty lub
+        pozyskiwane od miejscowych gospodarzy. Specjalnością gospodarstwa są prołziaki i paciara z orkiszu.</p>
+    </div>
+
+  </div>

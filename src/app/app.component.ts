@@ -3,6 +3,7 @@ import { ContentService } from './content/content.service';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 import { fadeInAnimation } from './_animations/fade-in.animation';
 import { fadeInLongAnimation } from './_animations/fade-in-long.animation';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,9 @@ import { fadeInLongAnimation } from './_animations/fade-in-long.animation';
   animations: [fadeInAnimation, fadeInLongAnimation]
 })
 export class AppComponent implements OnInit {
-  constructor (private contentService: ContentService) {}
+  constructor (private router: Router) {}
 
   ngOnInit() {
-    this.contentService.imageActivated.next('https://source.unsplash.com/MwOxCJUsRNM');
+    this.router.navigate(['']);
   }
 }

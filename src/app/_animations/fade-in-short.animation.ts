@@ -14,4 +14,5 @@ export const fadeInShortAnimation =
            // animation and styles at end of transition
            animate('600ms 800ms', style({ opacity: 1 }))
        ]),
+
    ]);

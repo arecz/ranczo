@@ -1,0 +1,28 @@
+.btn-blog {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    background-color: #FFC107;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 30px 80px;
+    margin: 2rem auto;
+    border-radius: 20px;
+    box-shadow: 0 9px #efa424;
+    transition: transform 0.2s 0.02s, box-shadow 0.2s 0.05s;
+    
+}
+
+.btn-blog:hover {
+    transform: translateY(3px);
+    box-shadow: 0 6px #efa424;
+}
+
+.btn-blog:active {
+    transform: translateY(8px);
+    box-shadow: none;
+}
